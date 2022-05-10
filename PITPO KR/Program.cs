@@ -14,9 +14,17 @@ namespace PITPO_KR
     [STAThread]
     static void Main()
     {
+      InitStartAppInstance();
+
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new Form1());
+      Application.Run(new AuthForm());
+    }
+
+    static void InitStartAppInstance()
+    {
+      AppInstance.students.Add(new StudentAccount("Denis", "0910"));
+      AppInstance.teachers.Add(new TeacherAccount("Admin", "admin"));
     }
   }
 }

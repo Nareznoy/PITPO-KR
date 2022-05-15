@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace PITPO_KR
 {
-  public partial class StudentForm : Form
+  public partial class WorkTestForm : Form
   {
-    public StudentForm()
+    public WorkTestForm()
     {
       InitializeComponent();
-    }
-
-    private void btnTests_Click(object sender, EventArgs e)
-    {
-      TestChooseForm testChooseForm = new TestChooseForm();
-      testChooseForm.ShowDialog();
     }
   }
 }

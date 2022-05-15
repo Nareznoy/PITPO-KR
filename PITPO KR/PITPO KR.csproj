@@ -89,7 +89,19 @@
     </Compile>
     <Compile Include="TeacherAccount.cs" />
     <Compile Include="Test.cs" />
+    <Compile Include="TestChooseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestChooseForm.Designer.cs">
+      <DependentUpon>TestChooseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserAccount.cs" />
+    <Compile Include="WorkTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkTestForm.Designer.cs">
+      <DependentUpon>WorkTestForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddMarksForm.resx">
       <DependentUpon>AddMarksForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +128,12 @@
     </Compile>
     <EmbeddedResource Include="StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestChooseForm.resx">
+      <DependentUpon>TestChooseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkTestForm.resx">
+      <DependentUpon>WorkTestForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

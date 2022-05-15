@@ -25,6 +25,11 @@ namespace PITPO_KR
     {
       AppInstance.students.Add(new StudentAccount("Denis", "0910"));
       AppInstance.teachers.Add(new TeacherAccount("Admin", "admin"));
+
+      Test test = new Test("Викторина автомобильная", AppInstance.teachers[0]);
+      test.addQuestion("");
+      AppInstance.tests.Add();
+
     }
   }
 }

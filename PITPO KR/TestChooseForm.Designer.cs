@@ -30,14 +30,14 @@ namespace PITPO_KR
     private void InitializeComponent()
     {
       this.cmbTestList = new System.Windows.Forms.ComboBox();
-      this.label1 = new System.Windows.Forms.Label();
+      this.lblCounter = new System.Windows.Forms.Label();
       this.chkQ4 = new System.Windows.Forms.CheckBox();
       this.chkQ3 = new System.Windows.Forms.CheckBox();
       this.chkQ2 = new System.Windows.Forms.CheckBox();
       this.chkQ1 = new System.Windows.Forms.CheckBox();
       this.btnNextQuest = new System.Windows.Forms.Button();
       this.btnPrevQuest = new System.Windows.Forms.Button();
-      this.lbl = new System.Windows.Forms.Label();
+      this.lblQuestName = new System.Windows.Forms.Label();
       this.lblTestName = new System.Windows.Forms.Label();
       this.label2 = new System.Windows.Forms.Label();
       this.SuspendLayout();
@@ -49,20 +49,21 @@ namespace PITPO_KR
       this.cmbTestList.Name = "cmbTestList";
       this.cmbTestList.Size = new System.Drawing.Size(342, 21);
       this.cmbTestList.TabIndex = 0;
+      this.cmbTestList.SelectionChangeCommitted += new System.EventHandler(this.cmbTestList_SelectionChangeCommitted);
       // 
-      // label1
+      // lblCounter
       // 
-      this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(169, 266);
-      this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(24, 13);
-      this.label1.TabIndex = 17;
-      this.label1.Text = "0/0";
+      this.lblCounter.AutoSize = true;
+      this.lblCounter.Location = new System.Drawing.Point(172, 266);
+      this.lblCounter.Name = "lblCounter";
+      this.lblCounter.Size = new System.Drawing.Size(24, 13);
+      this.lblCounter.TabIndex = 17;
+      this.lblCounter.Text = "0/0";
       // 
       // chkQ4
       // 
       this.chkQ4.AutoSize = true;
-      this.chkQ4.Location = new System.Drawing.Point(16, 204);
+      this.chkQ4.Location = new System.Drawing.Point(175, 158);
       this.chkQ4.Name = "chkQ4";
       this.chkQ4.Size = new System.Drawing.Size(72, 17);
       this.chkQ4.TabIndex = 16;
@@ -72,7 +73,7 @@ namespace PITPO_KR
       // chkQ3
       // 
       this.chkQ3.AutoSize = true;
-      this.chkQ3.Location = new System.Drawing.Point(16, 181);
+      this.chkQ3.Location = new System.Drawing.Point(175, 135);
       this.chkQ3.Name = "chkQ3";
       this.chkQ3.Size = new System.Drawing.Size(72, 17);
       this.chkQ3.TabIndex = 15;
@@ -101,30 +102,32 @@ namespace PITPO_KR
       // 
       // btnNextQuest
       // 
-      this.btnNextQuest.Location = new System.Drawing.Point(282, 261);
+      this.btnNextQuest.Location = new System.Drawing.Point(258, 261);
       this.btnNextQuest.Name = "btnNextQuest";
-      this.btnNextQuest.Size = new System.Drawing.Size(75, 23);
+      this.btnNextQuest.Size = new System.Drawing.Size(99, 23);
       this.btnNextQuest.TabIndex = 12;
       this.btnNextQuest.Text = ">";
       this.btnNextQuest.UseVisualStyleBackColor = true;
+      this.btnNextQuest.Click += new System.EventHandler(this.btnNextQuest_Click);
       // 
       // btnPrevQuest
       // 
-      this.btnPrevQuest.Location = new System.Drawing.Point(12, 261);
+      this.btnPrevQuest.Location = new System.Drawing.Point(15, 261);
       this.btnPrevQuest.Name = "btnPrevQuest";
       this.btnPrevQuest.Size = new System.Drawing.Size(75, 23);
       this.btnPrevQuest.TabIndex = 11;
       this.btnPrevQuest.Text = "<";
       this.btnPrevQuest.UseVisualStyleBackColor = true;
+      this.btnPrevQuest.Click += new System.EventHandler(this.btnPrevQuest_Click);
       // 
-      // lbl
+      // lblQuestName
       // 
-      this.lbl.AutoSize = true;
-      this.lbl.Location = new System.Drawing.Point(13, 107);
-      this.lbl.Name = "lbl";
-      this.lbl.Size = new System.Drawing.Size(44, 13);
-      this.lbl.TabIndex = 10;
-      this.lbl.Text = "Вопрос";
+      this.lblQuestName.AutoSize = true;
+      this.lblQuestName.Location = new System.Drawing.Point(13, 107);
+      this.lblQuestName.Name = "lblQuestName";
+      this.lblQuestName.Size = new System.Drawing.Size(44, 13);
+      this.lblQuestName.TabIndex = 10;
+      this.lblQuestName.Text = "Вопрос";
       // 
       // lblTestName
       // 
@@ -148,16 +151,16 @@ namespace PITPO_KR
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(369, 296);
+      this.ClientSize = new System.Drawing.Size(369, 294);
       this.Controls.Add(this.label2);
-      this.Controls.Add(this.label1);
+      this.Controls.Add(this.lblCounter);
       this.Controls.Add(this.chkQ4);
       this.Controls.Add(this.chkQ3);
       this.Controls.Add(this.chkQ2);
       this.Controls.Add(this.chkQ1);
       this.Controls.Add(this.btnNextQuest);
       this.Controls.Add(this.btnPrevQuest);
-      this.Controls.Add(this.lbl);
+      this.Controls.Add(this.lblQuestName);
       this.Controls.Add(this.lblTestName);
       this.Controls.Add(this.cmbTestList);
       this.Name = "TestChooseForm";
@@ -170,14 +173,14 @@ namespace PITPO_KR
     #endregion
 
     private System.Windows.Forms.ComboBox cmbTestList;
-    private System.Windows.Forms.Label label1;
+    private System.Windows.Forms.Label lblCounter;
     private System.Windows.Forms.CheckBox chkQ4;
     private System.Windows.Forms.CheckBox chkQ3;
     private System.Windows.Forms.CheckBox chkQ2;
     private System.Windows.Forms.CheckBox chkQ1;
     private System.Windows.Forms.Button btnNextQuest;
     private System.Windows.Forms.Button btnPrevQuest;
-    private System.Windows.Forms.Label lbl;
+    private System.Windows.Forms.Label lblQuestName;
     private System.Windows.Forms.Label lblTestName;
     private System.Windows.Forms.Label label2;
   }

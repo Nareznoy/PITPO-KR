@@ -14,9 +14,19 @@ namespace PITPO_KR
 
     public List<TeacherAccount> teachers { get; set; }
 
-    public StudentAccount(String userName, String userPassword) : base(userName, userPassword, UserType.Student)
-    {
+    public String group { get; set; }
 
+    public StudentAccount(String userLogin, String userPassword, String userName, String userSecondName, String group) : base(userLogin, userPassword, userName, userSecondName, UserType.Student)
+    {
+      marksByTests = new Dictionary<Test, int>();
+      progressByTests = new Dictionary<Test, int>();
+      teachers = new List<TeacherAccount>();
+      this.group = group;
+    }
+
+    public override string ToString()
+    {
+      return userName + " " + userSecondName + " " + "Группа: " + group;
     }
   }
 }

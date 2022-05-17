@@ -62,14 +62,14 @@
       // 
       this.textTestName.Location = new System.Drawing.Point(109, 9);
       this.textTestName.Name = "textTestName";
-      this.textTestName.Size = new System.Drawing.Size(167, 20);
+      this.textTestName.Size = new System.Drawing.Size(411, 20);
       this.textTestName.TabIndex = 1;
       // 
       // textQuestText
       // 
       this.textQuestText.Location = new System.Drawing.Point(109, 35);
       this.textQuestText.Name = "textQuestText";
-      this.textQuestText.Size = new System.Drawing.Size(167, 20);
+      this.textQuestText.Size = new System.Drawing.Size(411, 20);
       this.textQuestText.TabIndex = 3;
       // 
       // label2
@@ -84,7 +84,7 @@
       // label3
       // 
       this.label3.AutoSize = true;
-      this.label3.Location = new System.Drawing.Point(12, 75);
+      this.label3.Location = new System.Drawing.Point(19, 90);
       this.label3.Name = "label3";
       this.label3.Size = new System.Drawing.Size(16, 13);
       this.label3.TabIndex = 4;
@@ -93,7 +93,7 @@
       // label4
       // 
       this.label4.AutoSize = true;
-      this.label4.Location = new System.Drawing.Point(163, 75);
+      this.label4.Location = new System.Drawing.Point(290, 90);
       this.label4.Name = "label4";
       this.label4.Size = new System.Drawing.Size(16, 13);
       this.label4.TabIndex = 5;
@@ -101,36 +101,41 @@
       // 
       // textQ1
       // 
-      this.textQ1.Location = new System.Drawing.Point(34, 72);
+      this.textQ1.Location = new System.Drawing.Point(41, 71);
+      this.textQ1.Multiline = true;
       this.textQ1.Name = "textQ1";
-      this.textQ1.Size = new System.Drawing.Size(96, 20);
+      this.textQ1.Size = new System.Drawing.Size(208, 54);
       this.textQ1.TabIndex = 6;
       // 
       // textQ2
       // 
-      this.textQ2.Location = new System.Drawing.Point(185, 72);
+      this.textQ2.Location = new System.Drawing.Point(312, 71);
+      this.textQ2.Multiline = true;
       this.textQ2.Name = "textQ2";
-      this.textQ2.Size = new System.Drawing.Size(91, 20);
+      this.textQ2.Size = new System.Drawing.Size(208, 54);
       this.textQ2.TabIndex = 7;
       // 
       // textQ4
       // 
-      this.textQ4.Location = new System.Drawing.Point(185, 98);
+      this.textQ4.Location = new System.Drawing.Point(312, 131);
+      this.textQ4.Multiline = true;
       this.textQ4.Name = "textQ4";
-      this.textQ4.Size = new System.Drawing.Size(91, 20);
+      this.textQ4.Size = new System.Drawing.Size(208, 54);
       this.textQ4.TabIndex = 11;
       // 
       // textQ3
       // 
-      this.textQ3.Location = new System.Drawing.Point(34, 98);
+      this.textQ3.Location = new System.Drawing.Point(41, 135);
+      this.textQ3.Multiline = true;
       this.textQ3.Name = "textQ3";
-      this.textQ3.Size = new System.Drawing.Size(96, 20);
+      this.textQ3.Size = new System.Drawing.Size(208, 54);
       this.textQ3.TabIndex = 10;
+      this.textQ3.TextChanged += new System.EventHandler(this.textQ3_TextChanged);
       // 
       // label5
       // 
       this.label5.AutoSize = true;
-      this.label5.Location = new System.Drawing.Point(163, 101);
+      this.label5.Location = new System.Drawing.Point(290, 155);
       this.label5.Name = "label5";
       this.label5.Size = new System.Drawing.Size(16, 13);
       this.label5.TabIndex = 9;
@@ -139,7 +144,7 @@
       // label6
       // 
       this.label6.AutoSize = true;
-      this.label6.Location = new System.Drawing.Point(12, 101);
+      this.label6.Location = new System.Drawing.Point(19, 156);
       this.label6.Name = "label6";
       this.label6.Size = new System.Drawing.Size(16, 13);
       this.label6.TabIndex = 8;
@@ -147,9 +152,9 @@
       // 
       // btnAddQuest
       // 
-      this.btnAddQuest.Location = new System.Drawing.Point(91, 124);
+      this.btnAddQuest.Location = new System.Drawing.Point(128, 195);
       this.btnAddQuest.Name = "btnAddQuest";
-      this.btnAddQuest.Size = new System.Drawing.Size(128, 23);
+      this.btnAddQuest.Size = new System.Drawing.Size(142, 50);
       this.btnAddQuest.TabIndex = 12;
       this.btnAddQuest.Text = "Добавить вопрос";
       this.btnAddQuest.UseVisualStyleBackColor = true;
@@ -157,9 +162,9 @@
       // 
       // btnAddTest
       // 
-      this.btnAddTest.Location = new System.Drawing.Point(91, 153);
+      this.btnAddTest.Location = new System.Drawing.Point(293, 195);
       this.btnAddTest.Name = "btnAddTest";
-      this.btnAddTest.Size = new System.Drawing.Size(128, 23);
+      this.btnAddTest.Size = new System.Drawing.Size(142, 50);
       this.btnAddTest.TabIndex = 13;
       this.btnAddTest.Text = "Добавить тест";
       this.btnAddTest.UseVisualStyleBackColor = true;
@@ -168,7 +173,7 @@
       // chkQ1
       // 
       this.chkQ1.AutoSize = true;
-      this.chkQ1.Location = new System.Drawing.Point(136, 74);
+      this.chkQ1.Location = new System.Drawing.Point(255, 90);
       this.chkQ1.Name = "chkQ1";
       this.chkQ1.Size = new System.Drawing.Size(15, 14);
       this.chkQ1.TabIndex = 14;
@@ -177,7 +182,7 @@
       // chkQ3
       // 
       this.chkQ3.AutoSize = true;
-      this.chkQ3.Location = new System.Drawing.Point(136, 101);
+      this.chkQ3.Location = new System.Drawing.Point(255, 155);
       this.chkQ3.Name = "chkQ3";
       this.chkQ3.Size = new System.Drawing.Size(15, 14);
       this.chkQ3.TabIndex = 15;
@@ -186,7 +191,7 @@
       // chkQ2
       // 
       this.chkQ2.AutoSize = true;
-      this.chkQ2.Location = new System.Drawing.Point(282, 74);
+      this.chkQ2.Location = new System.Drawing.Point(526, 90);
       this.chkQ2.Name = "chkQ2";
       this.chkQ2.Size = new System.Drawing.Size(15, 14);
       this.chkQ2.TabIndex = 16;
@@ -195,7 +200,7 @@
       // chkQ4
       // 
       this.chkQ4.AutoSize = true;
-      this.chkQ4.Location = new System.Drawing.Point(282, 101);
+      this.chkQ4.Location = new System.Drawing.Point(526, 155);
       this.chkQ4.Name = "chkQ4";
       this.chkQ4.Size = new System.Drawing.Size(15, 14);
       this.chkQ4.TabIndex = 17;
@@ -204,7 +209,7 @@
       // lblHint
       // 
       this.lblHint.AutoSize = true;
-      this.lblHint.Location = new System.Drawing.Point(119, 186);
+      this.lblHint.Location = new System.Drawing.Point(137, 296);
       this.lblHint.Name = "lblHint";
       this.lblHint.Size = new System.Drawing.Size(0, 13);
       this.lblHint.TabIndex = 18;
@@ -213,7 +218,7 @@
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(327, 208);
+      this.ClientSize = new System.Drawing.Size(578, 269);
       this.Controls.Add(this.lblHint);
       this.Controls.Add(this.chkQ4);
       this.Controls.Add(this.chkQ2);

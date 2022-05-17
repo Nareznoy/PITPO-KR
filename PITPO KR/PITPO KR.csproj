@@ -77,6 +77,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LookTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookTestForm.Designer.cs">
+      <DependentUpon>LookTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oleg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oleg.Designer.cs">
+      <DependentUpon>Oleg.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Question.cs" />
@@ -86,6 +98,12 @@
     </Compile>
     <Compile Include="StudentForm.Designer.cs">
       <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentViewMarksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentViewMarksForm.Designer.cs">
+      <DependentUpon>StudentViewMarksForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TeacherAccount.cs" />
     <Compile Include="Test.cs" />
@@ -117,6 +135,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LookTestForm.resx">
+      <DependentUpon>LookTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oleg.resx">
+      <DependentUpon>Oleg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -128,6 +152,9 @@
     </Compile>
     <EmbeddedResource Include="StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentViewMarksForm.resx">
+      <DependentUpon>StudentViewMarksForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestChooseForm.resx">
       <DependentUpon>TestChooseForm.cs</DependentUpon>

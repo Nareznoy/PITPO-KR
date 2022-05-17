@@ -12,18 +12,23 @@ namespace PITPO_KR
 
     public TeacherAccount testOwner { get; set; }
 
-    public List<Question> answersByQuestions { get; set; }
+    public List<Question> questions { get; set; }
 
     public Test(String testName, TeacherAccount testOwner)
     {
       this.testName = testName;
       this.testOwner = testOwner;
-      answersByQuestions = new List<Question>();
+      questions = new List<Question>();
     }
 
     public void addQuestion(Question question)
     {
-      answersByQuestions.Add(question);
+      questions.Add(question);
+    }
+
+    public override string ToString()
+    {
+      return testName + ". " + testOwner;
     }
   }
 }

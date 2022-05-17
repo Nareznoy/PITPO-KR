@@ -12,9 +12,15 @@ namespace PITPO_KR
 
     public List<StudentAccount> students { get; set; }
 
-    public TeacherAccount(String userName, String userPassword) : base(userName, userPassword, UserType.Teacher)
+    public TeacherAccount(String userLogin, String userPassword, String userName, String userSecondName) : base(userLogin, userPassword, userName, userSecondName,UserType.Teacher)
     {
 
+    }
+
+
+    public override string ToString()
+    {
+      return "Преподаватель: " + userName + " " + userSecondName + " ";
     }
   }
 }

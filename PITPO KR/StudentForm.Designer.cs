@@ -51,6 +51,7 @@
       this.btnMyMarks.TabIndex = 2;
       this.btnMyMarks.Text = "Мои оценки";
       this.btnMyMarks.UseVisualStyleBackColor = true;
+      this.btnMyMarks.Click += new System.EventHandler(this.btnMyMarks_Click);
       // 
       // btnTests
       // 
@@ -70,6 +71,7 @@
       this.btnModules.TabIndex = 3;
       this.btnModules.Text = "Модули";
       this.btnModules.UseVisualStyleBackColor = true;
+      this.btnModules.Click += new System.EventHandler(this.btnModules_Click);
       // 
       // StudentForm
       // 

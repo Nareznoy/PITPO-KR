@@ -66,5 +66,10 @@ namespace PITPO_KR
       AppInstance.tests.Add(new Test(textTestName.Text, (TeacherAccount)AppInstance.currentUser));
       lblHint.Text = "Тест добавлен!";
     }
+
+    private void textQ3_TextChanged(object sender, EventArgs e)
+    {
+
+    }
   }
 }

@@ -31,7 +31,6 @@
       this.label1 = new System.Windows.Forms.Label();
       this.btnLookTests = new System.Windows.Forms.Button();
       this.btnAddTest = new System.Windows.Forms.Button();
-      this.btnLookProgress = new System.Windows.Forms.Button();
       this.btnAddMark = new System.Windows.Forms.Button();
       this.SuspendLayout();
       // 
@@ -52,6 +51,7 @@
       this.btnLookTests.TabIndex = 1;
       this.btnLookTests.Text = "Посмотреть тесты";
       this.btnLookTests.UseVisualStyleBackColor = true;
+      this.btnLookTests.Click += new System.EventHandler(this.btnLookTests_Click);
       // 
       // btnAddTest
       // 
@@ -63,15 +63,6 @@
       this.btnAddTest.UseVisualStyleBackColor = true;
       this.btnAddTest.Click += new System.EventHandler(this.btnAddTest_Click);
       // 
-      // btnLookProgress
-      // 
-      this.btnLookProgress.Location = new System.Drawing.Point(12, 121);
-      this.btnLookProgress.Name = "btnLookProgress";
-      this.btnLookProgress.Size = new System.Drawing.Size(156, 23);
-      this.btnLookProgress.TabIndex = 4;
-      this.btnLookProgress.Text = "Посмотреть прогресс";
-      this.btnLookProgress.UseVisualStyleBackColor = true;
-      // 
       // btnAddMark
       // 
       this.btnAddMark.Location = new System.Drawing.Point(12, 92);
@@ -80,13 +71,13 @@
       this.btnAddMark.TabIndex = 3;
       this.btnAddMark.Text = "Выставить оценки";
       this.btnAddMark.UseVisualStyleBackColor = true;
+      this.btnAddMark.Click += new System.EventHandler(this.btnAddMark_Click);
       // 
       // AdminForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(183, 173);
-      this.Controls.Add(this.btnLookProgress);
+      this.ClientSize = new System.Drawing.Size(183, 128);
       this.Controls.Add(this.btnAddMark);
       this.Controls.Add(this.btnAddTest);
       this.Controls.Add(this.btnLookTests);
@@ -103,7 +94,6 @@
     private System.Windows.Forms.Label label1;
     private System.Windows.Forms.Button btnLookTests;
     private System.Windows.Forms.Button btnAddTest;
-    private System.Windows.Forms.Button btnLookProgress;
     private System.Windows.Forms.Button btnAddMark;
   }
 }

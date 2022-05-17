@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace PITPO_KR
 {
+  [Serializable]
   static internal class AppInstance
   {
     static public UserAccount currentUser;

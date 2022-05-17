@@ -15,12 +15,26 @@ namespace PITPO_KR
     public StudentForm()
     {
       InitializeComponent();
+
+      
     }
 
     private void btnTests_Click(object sender, EventArgs e)
     {
       TestChooseForm testChooseForm = new TestChooseForm();
       testChooseForm.ShowDialog();
+    }
+
+    private void btnMyMarks_Click(object sender, EventArgs e)
+    {
+      StudentViewMarksForm studentViewMarksForm = new StudentViewMarksForm();
+      studentViewMarksForm.Show();
+    }
+
+    private void btnModules_Click(object sender, EventArgs e)
+    {
+      Oleg oleg = new Oleg();
+      oleg.ShowDialog();
     }
   }
 }

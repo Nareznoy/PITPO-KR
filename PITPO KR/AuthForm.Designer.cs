@@ -39,49 +39,56 @@
       // label1
       // 
       this.label1.AutoSize = true;
-      this.label1.Location = new System.Drawing.Point(51, 9);
+      this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.label1.Location = new System.Drawing.Point(103, 9);
       this.label1.Name = "label1";
-      this.label1.Size = new System.Drawing.Size(73, 13);
+      this.label1.Size = new System.Drawing.Size(129, 24);
       this.label1.TabIndex = 0;
       this.label1.Text = "Авторизация";
       // 
       // label2
       // 
       this.label2.AutoSize = true;
-      this.label2.Location = new System.Drawing.Point(16, 39);
+      this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.label2.Location = new System.Drawing.Point(32, 58);
       this.label2.Name = "label2";
-      this.label2.Size = new System.Drawing.Size(41, 13);
+      this.label2.Size = new System.Drawing.Size(69, 24);
       this.label2.TabIndex = 1;
       this.label2.Text = "Логин:";
       // 
       // label3
       // 
       this.label3.AutoSize = true;
-      this.label3.Location = new System.Drawing.Point(9, 65);
+      this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.label3.Location = new System.Drawing.Point(20, 95);
       this.label3.Name = "label3";
-      this.label3.Size = new System.Drawing.Size(48, 13);
+      this.label3.Size = new System.Drawing.Size(81, 24);
       this.label3.TabIndex = 2;
       this.label3.Text = "Пароль:";
       // 
       // txtLogin
       // 
-      this.txtLogin.Location = new System.Drawing.Point(63, 36);
+      this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.txtLogin.Location = new System.Drawing.Point(107, 58);
       this.txtLogin.Name = "txtLogin";
-      this.txtLogin.Size = new System.Drawing.Size(100, 20);
+      this.txtLogin.Size = new System.Drawing.Size(197, 29);
       this.txtLogin.TabIndex = 3;
       // 
       // txtPassword
       // 
-      this.txtPassword.Location = new System.Drawing.Point(63, 62);
+      this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.txtPassword.Location = new System.Drawing.Point(107, 95);
       this.txtPassword.Name = "txtPassword";
-      this.txtPassword.Size = new System.Drawing.Size(100, 20);
+      this.txtPassword.Size = new System.Drawing.Size(197, 29);
       this.txtPassword.TabIndex = 4;
+      this.txtPassword.UseSystemPasswordChar = true;
       // 
       // btnLogin
       // 
-      this.btnLogin.Location = new System.Drawing.Point(50, 92);
+      this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+      this.btnLogin.Location = new System.Drawing.Point(130, 152);
       this.btnLogin.Name = "btnLogin";
-      this.btnLogin.Size = new System.Drawing.Size(75, 23);
+      this.btnLogin.Size = new System.Drawing.Size(87, 41);
       this.btnLogin.TabIndex = 5;
       this.btnLogin.Text = "Войти";
       this.btnLogin.UseVisualStyleBackColor = true;
@@ -91,7 +98,7 @@
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(188, 135);
+      this.ClientSize = new System.Drawing.Size(351, 215);
       this.Controls.Add(this.btnLogin);
       this.Controls.Add(this.txtPassword);
       this.Controls.Add(this.txtLogin);

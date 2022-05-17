@@ -21,7 +21,7 @@ namespace PITPO_KR
     {
       foreach (TeacherAccount teacher in AppInstance.teachers)
       {
-        if (String.Equals(txtLogin.Text, teacher.userName)
+        if (String.Equals(txtLogin.Text, teacher.userLogin)
           && String.Equals(txtPassword.Text, teacher.userPassword))
         {
           AppInstance.currentUser = teacher;
@@ -34,7 +34,7 @@ namespace PITPO_KR
 
       foreach (StudentAccount student in AppInstance.students)
       {
-        if (String.Equals(txtLogin.Text, student.userName)
+        if (String.Equals(txtLogin.Text, student.userLogin)
           && String.Equals(txtPassword.Text, student.userPassword))
         {
           AppInstance.currentUser = student;
